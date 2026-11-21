@@ -2,10 +2,6 @@
 
 A responsive web app where customers file complaints and track their progress, and staff review, assign and resolve them. Built with plain HTML, CSS and JavaScript. No server or build step: everything runs in the browser and data is saved in `localStorage`.
 
-**Live demo:** _add your GitHub Pages link here_
-
-![Screenshot](screenshots/dashboard.png)
-
 ## Features
 **Customers**
 - File a complaint with validation and an optional photo (resized in the browser)
@@ -28,8 +24,7 @@ complaint-management-system/
 ├── index.html        # page shell
 ├── css/style.css     # styles (CSS variables, grid, dark mode)
 ├── js/app.js         # all logic: views, storage, forms, dashboard
-├── assets/favicon.svg
-└── screenshots/      # add your screenshots here
+└── assets/favicon.svg
 ```
 
 ## Run it
@@ -42,7 +37,7 @@ Open `index.html` in any modern browser. No installation needed.
 
 ## How it works
 - Complaints are stored as JSON under one `localStorage` key and loaded on start. Sample data is created on first visit.
-- The page is rendered by small view functions (`viewFile`, `viewTrack`, `viewStaff`) and switched with the URL hash.
+- The page is rendered by small view functions (`viewFile`, `viewTrack`, `viewStaff`) and switched by a small `go()` function that also keeps the URL hash in sync.
 - Staff actions (status, assignment, notes) append to each complaint's history, which the tracking page shows to the customer. Internal notes are kept separate.
 
 ## Limitations
