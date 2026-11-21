@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Complaint Management System</title>
+<meta name="description" content="Complaint management web app: file and track complaints, with a staff dashboard.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="#file" data-go="file"><span class="mark">✎</span>Complaint Management System</a>
+<nav id="nav"><a href="#file" data-go="file">File a complaint</a><a href="#track" data-go="track">Track status</a><a href="#staff" data-go="staff">Staff</a></nav>
+</div></header>
+<main><div class="wrap" id="app"></div></main>
+<div class="wrap"><footer>Front-end project built with HTML, CSS and JavaScript. Complaints are saved in this browser (localStorage). Staff login: admin@example.com / admin123</footer></div>
+<dialog id="dlg"></dialog>
+<script src="js/app.js"></script>
+</body>
+</html>
